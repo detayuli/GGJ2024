@@ -19,6 +19,10 @@ namespace team13
         // Update is called once per frame
         void Update()
         {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                Pause();
+            }
 
         }
 
@@ -30,6 +34,21 @@ namespace team13
         public void QuitGame()
         {
             Application.Quit();
+        }
+
+        public void Pause()
+        {
+            Time.timeScale = 0;
+        }
+
+        public void BackMenu()
+        {
+            SceneManager.LoadSceneAsync("Main Menu");
+        }
+
+        public void Resume()
+        {
+            Time.timeScale = 1;
         }
     }
 }
