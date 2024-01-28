@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 844121715766125081}
   - component: {fileID: 393800996312647155}
   - component: {fileID: 5549244912906317131}
+  - component: {fileID: 7224848701758765934}
   m_Layer: 0
   m_Name: MC-walk
   m_TagString: Untagged
@@ -106,3 +107,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7224848701758765934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4281570870803611718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0703664e6d894554ebf4346bc9b230d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpOffset: {x: 0, y: 0, z: 0}
+  jumpPower: 5
+  jumpDuration: 1

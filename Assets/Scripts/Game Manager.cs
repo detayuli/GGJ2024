@@ -10,6 +10,7 @@ namespace team13
         public GameObject[] objectsToSpawn; // Array to store the three objects
         public float pauseDuration = 5f; // Adjust this value to set the pause duration
         private bool isGamePaused = false;
+        public MainCharacter MainCharacter { get; private set; }
 
         void Awake()
         {
@@ -21,6 +22,7 @@ namespace team13
 
         void Start()
         {
+            MainCharacter = FindObjectOfType<MainCharacter>();
             InvokeRepeating("SpawnRandomObject", 0f, 5f);
         }
 
